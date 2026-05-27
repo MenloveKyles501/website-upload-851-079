@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片分类大全-最新影片合集-最新电影大全-高清影片在线观看</title>
+  <meta name="description" content="最新影片合集页面围绕近期更新内容整理，涵盖电影、影片和相关分类片库。">
+  <meta name="keywords" content="最新影片合集,最新电影,高清影片,在线观看,影片更新,电影大全">
+  <link rel="stylesheet" href="assets/css/original.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center space-x-2 text-xl font-bold text-red-600">
+        <span class="site-logo-mark">▶</span>
+        <span>高清影片大全</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="nav-link">首页</a>
+        <a href="categories.html" class="nav-link">分类</a>
+        <a href="ranking.html" class="nav-link">排行榜</a>
+        <a href="category/latest.html" class="nav-link whitespace-nowrap">年度新片</a><a href="category/hot.html" class="nav-link whitespace-nowrap">高分热播</a><a href="category/chinese.html" class="nav-link whitespace-nowrap">华语片库</a><a href="category/asian.html" class="nav-link whitespace-nowrap">亚洲精选</a><a href="category/global.html" class="nav-link whitespace-nowrap">环球影视</a><a href="category/series.html" class="nav-link whitespace-nowrap">高清剧集</a>
+      </nav>
+      <form action="search.html" method="get" class="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2">
+        <input type="text" name="q" placeholder="搜索影片..." class="bg-transparent outline-none text-sm w-48">
+        <button type="submit" class="text-gray-600 hover:text-red-600">搜索</button>
+      </form>
+      <button type="button" class="md:hidden text-gray-700 text-2xl" data-menu-button>☰</button>
+    </div>
+    <div class="hidden md:block border-t border-gray-100">
+      <div class="flex items-center space-x-4 py-2 overflow-x-auto text-sm">
+        <a href="categories.html" class="nav-link whitespace-nowrap">全部分类</a>
+        <a href="category/latest.html" class="nav-link whitespace-nowrap">年度新片</a><a href="category/hot.html" class="nav-link whitespace-nowrap">高分热播</a><a href="category/chinese.html" class="nav-link whitespace-nowrap">华语片库</a><a href="category/asian.html" class="nav-link whitespace-nowrap">亚洲精选</a><a href="category/global.html" class="nav-link whitespace-nowrap">环球影视</a><a href="category/series.html" class="nav-link whitespace-nowrap">高清剧集</a><a href="category/suspense.html" class="nav-link whitespace-nowrap">悬疑犯罪</a><a href="category/romance.html" class="nav-link whitespace-nowrap">爱情剧情</a><a href="category/comedy.html" class="nav-link whitespace-nowrap">喜剧动画</a><a href="category/action.html" class="nav-link whitespace-nowrap">动作科幻</a>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu md:hidden bg-white border-t border-gray-100" data-mobile-menu>
+    <div class="container mx-auto px-4 py-4">
+      <form action="search.html" method="get" class="flex items-center bg-gray-100 rounded-full px-4 py-2 mb-4">
+        <input type="text" name="q" placeholder="搜索影片..." class="bg-transparent outline-none text-sm flex-1">
+        <button type="submit" class="text-gray-600 hover:text-red-600">搜索</button>
+      </form>
+      <a href="index.html" class="block py-2 text-gray-700 hover:text-red-600">首页</a>
+      <a href="categories.html" class="block py-2 text-gray-700 hover:text-red-600">分类</a>
+      <a href="ranking.html" class="block py-2 text-gray-700 hover:text-red-600">排行榜</a>
+      <a href="category/latest.html" class="block py-2 text-gray-700 hover:text-red-600">年度新片</a><a href="category/hot.html" class="block py-2 text-gray-700 hover:text-red-600">高分热播</a><a href="category/chinese.html" class="block py-2 text-gray-700 hover:text-red-600">华语片库</a><a href="category/asian.html" class="block py-2 text-gray-700 hover:text-red-600">亚洲精选</a><a href="category/global.html" class="block py-2 text-gray-700 hover:text-red-600">环球影视</a><a href="category/series.html" class="block py-2 text-gray-700 hover:text-red-600">高清剧集</a><a href="category/suspense.html" class="block py-2 text-gray-700 hover:text-red-600">悬疑犯罪</a><a href="category/romance.html" class="block py-2 text-gray-700 hover:text-red-600">爱情剧情</a><a href="category/comedy.html" class="block py-2 text-gray-700 hover:text-red-600">喜剧动画</a><a href="category/action.html" class="block py-2 text-gray-700 hover:text-red-600">动作科幻</a>
+    </div>
+  </div>
+</header>
+
+
+<main class="container mx-auto px-4 py-12">
+  <section class="mb-10">
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">影片分类大全</h1>
+    <p class="text-gray-600 leading-7 max-w-3xl">最新影片合集页面围绕近期更新内容整理，涵盖电影、影片和相关分类片库。 分类页按题材、地区、年份和观看热度组织影片，方便快速进入不同片库。</p>
+  </section>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    
+<section class="category-card p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <span class="badge mb-3">年度新片</span>
+      <h2 class="text-2xl font-bold text-gray-900">年度新片影片</h2>
+    </div>
+    <a href="category/latest.html" class="text-red-600 hover:text-red-700 font-semibold">进入分类 →</a>
+  </div>
+  <p class="text-gray-600 mb-5 leading-7">收录近期更新的热门电影、剧集与多类型影片，适合快速浏览当下新片。</p>
+  <div class="space-y-2">
+<a href="movie/movie-0007.html" class="rank-item">
+  <span class="rank-no">1</span>
+  <img src="7.jpg" alt="神探狄仁杰前传" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">神探狄仁杰前传</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.8 · 2025</span>
+  </span>
+</a>
+
+<a href="movie/movie-0010.html" class="rank-item">
+  <span class="rank-no">2</span>
+  <img src="10.jpg" alt="致命交叉点" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">致命交叉点</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.9 · 2025</span>
+  </span>
+</a>
+
+<a href="movie/movie-0020.html" class="rank-item">
+  <span class="rank-no">3</span>
+  <img src="20.jpg" alt="悲戚的冷漠" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">悲戚的冷漠</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.8 · 2026</span>
+  </span>
+</a>
+
+<a href="movie/movie-0033.html" class="rank-item">
+  <span class="rank-no">4</span>
+  <img src="33.jpg" alt="血色附身" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">血色附身</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.7 · 2026</span>
+  </span>
+</a>
+
+<a href="movie/movie-0043.html" class="rank-item">
+  <span class="rank-no">5</span>
+  <img src="43.jpg" alt="白眉大侠" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">白眉大侠</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.2 · 2026</span>
+  </span>
+</a>
+</div>
+</section>
+
+<section class="category-card p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <span class="badge mb-3">高分热播</span>
+      <h2 class="text-2xl font-bold text-gray-900">高分热播影片</h2>
+    </div>
+    <a href="category/hot.html" class="text-red-600 hover:text-red-700 font-semibold">进入分类 →</a>
+  </div>
+  <p class="text-gray-600 mb-5 leading-7">按热度与评分精选的片库入口，集中呈现人气更高的影视内容。</p>
+  <div class="space-y-2">
+<a href="movie/movie-0001.html" class="rank-item">
+  <span class="rank-no">1</span>
+  <img src="1.jpg" alt="请融化我" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">请融化我</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.7 · 2019</span>
+  </span>
+</a>
+
+<a href="movie/movie-0011.html" class="rank-item">
+  <span class="rank-no">2</span>
+  <img src="11.jpg" alt="鬼娃恰吉第二季" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">鬼娃恰吉第二季</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.6 · 2025</span>
+  </span>
+</a>
+
+<a href="movie/movie-0021.html" class="rank-item">
+  <span class="rank-no">3</span>
+  <img src="21.jpg" alt="泽西恶魔" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">泽西恶魔</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.5 · 2025</span>
+  </span>
+</a>
+
+<a href="movie/movie-0026.html" class="rank-item">
+  <span class="rank-no">4</span>
+  <img src="26.jpg" alt="血玫瑰" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">血玫瑰</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.7 · 2017</span>
+  </span>
+</a>
+
+<a href="movie/movie-0039.html" class="rank-item">
+  <span class="rank-no">5</span>
+  <img src="39.jpg" alt="恐惧拉斯维加斯" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">恐惧拉斯维加斯</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.5 · 2019</span>
+  </span>
+</a>
+</div>
+</section>
+
+<section class="category-card p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <span class="badge mb-3">华语片库</span>
+      <h2 class="text-2xl font-bold text-gray-900">华语片库影片</h2>
+    </div>
+    <a href="category/chinese.html" class="text-red-600 hover:text-red-700 font-semibold">进入分类 →</a>
+  </div>
+  <p class="text-gray-600 mb-5 leading-7">聚合中国大陆、香港、台湾等华语地区电影与剧集，覆盖剧情、爱情、家庭、动作等题材。</p>
+  <div class="space-y-2">
+<a href="movie/movie-0003.html" class="rank-item">
+  <span class="rank-no">1</span>
+  <img src="3.jpg" alt="月月" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">月月</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.3 · 2024</span>
+  </span>
+</a>
+
+<a href="movie/movie-0012.html" class="rank-item">
+  <span class="rank-no">2</span>
+  <img src="12.jpg" alt="龙门镖局1.5版" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">龙门镖局1.5版</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.4 · 2025</span>
+  </span>
+</a>
+
+<a href="movie/movie-0027.html" class="rank-item">
+  <span class="rank-no">3</span>
+  <img src="27.jpg" alt="追捕2003" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">追捕2003</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.4 · 2024</span>
+  </span>
+</a>
+
+<a href="movie/movie-0030.html" class="rank-item">
+  <span class="rank-no">4</span>
+  <img src="30.jpg" alt="天台游戏" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">天台游戏</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.4 · 2023</span>
+  </span>
+</a>
+
+<a href="movie/movie-0040.html" class="rank-item">
+  <span class="rank-no">5</span>
+  <img src="40.jpg" alt="街上无树" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">街上无树</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.7 · 2024</span>
+  </span>
+</a>
+</div>
+</section>
+
+<section class="category-card p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <span class="badge mb-3">亚洲精选</span>
+      <h2 class="text-2xl font-bold text-gray-900">亚洲精选影片</h2>
+    </div>
+    <a href="category/asian.html" class="text-red-600 hover:text-red-700 font-semibold">进入分类 →</a>
+  </div>
+  <p class="text-gray-600 mb-5 leading-7">日韩、东南亚及亚洲多地区影视内容，包含电影、剧集、动画和悬疑故事。</p>
+  <div class="space-y-2">
+<a href="movie/movie-0015.html" class="rank-item">
+  <span class="rank-no">1</span>
+  <img src="15.jpg" alt="欲潮" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">欲潮</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.0 · 2015</span>
+  </span>
+</a>
+
+<a href="movie/movie-0016.html" class="rank-item">
+  <span class="rank-no">2</span>
+  <img src="16.jpg" alt="伊如阳光" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">伊如阳光</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.2 · 2024</span>
+  </span>
+</a>
+
+<a href="movie/movie-0022.html" class="rank-item">
+  <span class="rank-no">3</span>
+  <img src="22.jpg" alt="解冰" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">解冰</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.7 · 2025</span>
+  </span>
+</a>
+
+<a href="movie/movie-0032.html" class="rank-item">
+  <span class="rank-no">4</span>
+  <img src="32.jpg" alt="杀戮罗曼史" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">杀戮罗曼史</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.2 · 2024</span>
+  </span>
+</a>
+
+<a href="movie/movie-0058.html" class="rank-item">
+  <span class="rank-no">5</span>
+  <img src="58.jpg" alt="幽灵陷阱" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">幽灵陷阱</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.4 · 2025</span>
+  </span>
+</a>
+</div>
+</section>
+
+<section class="category-card p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <span class="badge mb-3">环球影视</span>
+      <h2 class="text-2xl font-bold text-gray-900">环球影视影片</h2>
+    </div>
+    <a href="category/global.html" class="text-red-600 hover:text-red-700 font-semibold">进入分类 →</a>
+  </div>
+  <p class="text-gray-600 mb-5 leading-7">欧美及其他地区电影剧集合集，涵盖犯罪、冒险、科幻、剧情等多样题材。</p>
+  <div class="space-y-2">
+<a href="movie/movie-0002.html" class="rank-item">
+  <span class="rank-no">1</span>
+  <img src="2.jpg" alt="郊区男孩" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">郊区男孩</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.6 · 2023</span>
+  </span>
+</a>
+
+<a href="movie/movie-0013.html" class="rank-item">
+  <span class="rank-no">2</span>
+  <img src="13.jpg" alt="罗素克洛之大法师" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">罗素克洛之大法师</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.7 · 2005</span>
+  </span>
+</a>
+
+<a href="movie/movie-0023.html" class="rank-item">
+  <span class="rank-no">3</span>
+  <img src="23.jpg" alt="直捣火星" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">直捣火星</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.8 · 2026</span>
+  </span>
+</a>
+
+<a href="movie/movie-0036.html" class="rank-item">
+  <span class="rank-no">4</span>
+  <img src="36.jpg" alt="寻宝假期2:自然召唤" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">寻宝假期2:自然召唤</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.8 · 2023</span>
+  </span>
+</a>
+
+<a href="movie/movie-0045.html" class="rank-item">
+  <span class="rank-no">5</span>
+  <img src="45.jpg" alt="仇恨之路" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">仇恨之路</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.0 · 2006</span>
+  </span>
+</a>
+</div>
+</section>
+
+<section class="category-card p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <span class="badge mb-3">高清剧集</span>
+      <h2 class="text-2xl font-bold text-gray-900">高清剧集影片</h2>
+    </div>
+    <a href="category/series.html" class="text-red-600 hover:text-red-700 font-semibold">进入分类 →</a>
+  </div>
+  <p class="text-gray-600 mb-5 leading-7">集中整理电视剧、网络剧、动画剧集、综艺等连续内容，适合追剧浏览。</p>
+  <div class="space-y-2">
+<a href="movie/movie-0006.html" class="rank-item">
+  <span class="rank-no">1</span>
+  <img src="6.jpg" alt="枪花" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">枪花</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.6 · 2013</span>
+  </span>
+</a>
+
+<a href="movie/movie-0014.html" class="rank-item">
+  <span class="rank-no">2</span>
+  <img src="14.jpg" alt="当狗爱上猫粤语" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">当狗爱上猫粤语</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.7 · 2008</span>
+  </span>
+</a>
+
+<a href="movie/movie-0029.html" class="rank-item">
+  <span class="rank-no">3</span>
+  <img src="29.jpg" alt="看门狗" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">看门狗</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.6 · 2024</span>
+  </span>
+</a>
+
+<a href="movie/movie-0034.html" class="rank-item">
+  <span class="rank-no">4</span>
+  <img src="34.jpg" alt="锋味2017" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">锋味2017</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.2 · 2017</span>
+  </span>
+</a>
+
+<a href="movie/movie-0044.html" class="rank-item">
+  <span class="rank-no">5</span>
+  <img src="44.jpg" alt="我的修真靠抽卡" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">我的修真靠抽卡</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.0 · 2024</span>
+  </span>
+</a>
+</div>
+</section>
+
+<section class="category-card p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <span class="badge mb-3">悬疑犯罪</span>
+      <h2 class="text-2xl font-bold text-gray-900">悬疑犯罪影片</h2>
+    </div>
+    <a href="category/suspense.html" class="text-red-600 hover:text-red-700 font-semibold">进入分类 →</a>
+  </div>
+  <p class="text-gray-600 mb-5 leading-7">悬疑、惊悚、犯罪、案件与心理类型内容合集，节奏紧张、故事感强。</p>
+  <div class="space-y-2">
+<a href="movie/movie-0004.html" class="rank-item">
+  <span class="rank-no">1</span>
+  <img src="4.jpg" alt="血洗洪花亭" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">血洗洪花亭</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.9 · 1990</span>
+  </span>
+</a>
+
+<a href="movie/movie-0018.html" class="rank-item">
+  <span class="rank-no">2</span>
+  <img src="18.jpg" alt="最高原则" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">最高原则</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.4 · 2022</span>
+  </span>
+</a>
+
+<a href="movie/movie-0024.html" class="rank-item">
+  <span class="rank-no">3</span>
+  <img src="24.jpg" alt="铁丝中的风" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">铁丝中的风</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.5 · 2024</span>
+  </span>
+</a>
+
+<a href="movie/movie-0037.html" class="rank-item">
+  <span class="rank-no">4</span>
+  <img src="37.jpg" alt="一封明信片" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">一封明信片</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.2 · 2025</span>
+  </span>
+</a>
+
+<a href="movie/movie-0046.html" class="rank-item">
+  <span class="rank-no">5</span>
+  <img src="46.jpg" alt="开玩笑 第一季" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">开玩笑 第一季</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.8 · 2024</span>
+  </span>
+</a>
+</div>
+</section>
+
+<section class="category-card p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <span class="badge mb-3">爱情剧情</span>
+      <h2 class="text-2xl font-bold text-gray-900">爱情剧情影片</h2>
+    </div>
+    <a href="category/romance.html" class="text-red-600 hover:text-red-700 font-semibold">进入分类 →</a>
+  </div>
+  <p class="text-gray-600 mb-5 leading-7">爱情、剧情、家庭、女性、青春和成长题材影片，适合沉浸式观影。</p>
+  <div class="space-y-2">
+<a href="movie/movie-0005.html" class="rank-item">
+  <span class="rank-no">1</span>
+  <img src="5.jpg" alt="人欢马叫" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">人欢马叫</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.4 · 1975</span>
+  </span>
+</a>
+
+<a href="movie/movie-0017.html" class="rank-item">
+  <span class="rank-no">2</span>
+  <img src="17.jpg" alt="湖畔迷情" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">湖畔迷情</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.2 · 2026</span>
+  </span>
+</a>
+
+<a href="movie/movie-0028.html" class="rank-item">
+  <span class="rank-no">3</span>
+  <img src="28.jpg" alt="爸爸跟我来" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">爸爸跟我来</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.8 · 2012</span>
+  </span>
+</a>
+
+<a href="movie/movie-0038.html" class="rank-item">
+  <span class="rank-no">4</span>
+  <img src="38.jpg" alt="粉红色的梦" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">粉红色的梦</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.6 · 2023</span>
+  </span>
+</a>
+
+<a href="movie/movie-0047.html" class="rank-item">
+  <span class="rank-no">5</span>
+  <img src="47.jpg" alt="2号球衣" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">2号球衣</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.9 · 2025</span>
+  </span>
+</a>
+</div>
+</section>
+
+<section class="category-card p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <span class="badge mb-3">喜剧动画</span>
+      <h2 class="text-2xl font-bold text-gray-900">喜剧动画影片</h2>
+    </div>
+    <a href="category/comedy.html" class="text-red-600 hover:text-red-700 font-semibold">进入分类 →</a>
+  </div>
+  <p class="text-gray-600 mb-5 leading-7">喜剧、动画、综艺、奇幻轻松向内容合集，适合休闲娱乐。</p>
+  <div class="space-y-2">
+<a href="movie/movie-0008.html" class="rank-item">
+  <span class="rank-no">1</span>
+  <img src="8.jpg" alt="诱惑医生一百天" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">诱惑医生一百天</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.7 · 2003</span>
+  </span>
+</a>
+
+<a href="movie/movie-0025.html" class="rank-item">
+  <span class="rank-no">2</span>
+  <img src="25.jpg" alt="鳄鱼邓迪在洛杉矶" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">鳄鱼邓迪在洛杉矶</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.3 · 2001</span>
+  </span>
+</a>
+
+<a href="movie/movie-0031.html" class="rank-item">
+  <span class="rank-no">3</span>
+  <img src="31.jpg" alt="通灵之王第二季" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">通灵之王第二季</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.6 · 2024</span>
+  </span>
+</a>
+
+<a href="movie/movie-0041.html" class="rank-item">
+  <span class="rank-no">4</span>
+  <img src="41.jpg" alt="我凭本事单身" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">我凭本事单身</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.8 · 2024</span>
+  </span>
+</a>
+
+<a href="movie/movie-0054.html" class="rank-item">
+  <span class="rank-no">5</span>
+  <img src="54.jpg" alt="心动倒计时" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">心动倒计时</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.4 · 2025</span>
+  </span>
+</a>
+</div>
+</section>
+
+<section class="category-card p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <span class="badge mb-3">动作科幻</span>
+      <h2 class="text-2xl font-bold text-gray-900">动作科幻影片</h2>
+    </div>
+    <a href="category/action.html" class="text-red-600 hover:text-red-700 font-semibold">进入分类 →</a>
+  </div>
+  <p class="text-gray-600 mb-5 leading-7">动作、科幻、冒险、奇幻、战争、武侠等高能类型影片合集。</p>
+  <div class="space-y-2">
+<a href="movie/movie-0009.html" class="rank-item">
+  <span class="rank-no">1</span>
+  <img src="9.jpg" alt="11号战壕" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">11号战壕</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.2 · 2020</span>
+  </span>
+</a>
+
+<a href="movie/movie-0019.html" class="rank-item">
+  <span class="rank-no">2</span>
+  <img src="19.jpg" alt="假如没有遇见你" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">假如没有遇见你</strong>
+    <span class="block text-xs text-gray-500">⭐ 9.7 · 2026</span>
+  </span>
+</a>
+
+<a href="movie/movie-0035.html" class="rank-item">
+  <span class="rank-no">3</span>
+  <img src="35.jpg" alt="暮色之战:异能部队" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">暮色之战:异能部队</strong>
+    <span class="block text-xs text-gray-500">⭐ 7.7 · 2019</span>
+  </span>
+</a>
+
+<a href="movie/movie-0042.html" class="rank-item">
+  <span class="rank-no">4</span>
+  <img src="42.jpg" alt="我的魔鬼朋友" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">我的魔鬼朋友</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.5 · 2025</span>
+  </span>
+</a>
+
+<a href="movie/movie-0050.html" class="rank-item">
+  <span class="rank-no">5</span>
+  <img src="50.jpg" alt="邯郸起义" class="w-12 h-16 object-cover rounded-lg" loading="lazy">
+  <span class="min-w-0 flex-1">
+    <strong class="block text-sm text-gray-900 line-clamp-1">邯郸起义</strong>
+    <span class="block text-xs text-gray-500">⭐ 8.2 · 1990</span>
+  </span>
+</a>
+</div>
+</section>
+
+  </div>
+</main>
+
+
+<footer class="bg-gray-900 text-gray-300 mt-16">
+  <div class="container mx-auto px-4 py-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center space-x-2 text-xl font-bold text-white mb-3">
+          <span class="site-logo-mark">▶</span>
+          <span>高清影片大全</span>
+        </div>
+        <p class="text-sm text-gray-400">最新影片合集页面围绕近期更新内容整理，涵盖电影、影片和相关分类片库。</p>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-3">影视分类</h3>
+        <div class="grid grid-cols-2 gap-2 text-sm"><a href="category/latest.html" class="hover:text-red-500 transition">年度新片</a><a href="category/hot.html" class="hover:text-red-500 transition">高分热播</a><a href="category/chinese.html" class="hover:text-red-500 transition">华语片库</a><a href="category/asian.html" class="hover:text-red-500 transition">亚洲精选</a><a href="category/global.html" class="hover:text-red-500 transition">环球影视</a><a href="category/series.html" class="hover:text-red-500 transition">高清剧集</a></div>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-3">热门入口</h3>
+        <div class="grid grid-cols-2 gap-2 text-sm">
+          <a href="index.html#hot" class="hover:text-red-500 transition">热门排行</a>
+          <a href="ranking.html" class="hover:text-red-500 transition">影片榜单</a>
+          <a href="search.html" class="hover:text-red-500 transition">影片搜索</a>
+          <a href="categories.html" class="hover:text-red-500 transition">分类片库</a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-gray-500 mt-8">© 2026 高清影片大全 版权所有</p>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

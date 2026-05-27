@@ -1,0 +1,14 @@
+{
+  "parsed_movies": 2000,
+  "movie_detail_pages": 2000,
+  "category_pages": 12,
+  "category_assigned_movies": 2000,
+  "html_pages": 2016,
+  "analytics_pages": 2016,
+  "missing_analytics": [],
+  "missing_movie_pages": [],
+  "jpg_files_in_build": [],
+  "all_movies_have_detail_page": true,
+  "all_movies_covered_by_categories": true,
+  "no_jpg_files_packaged": true
+}
